@@ -1,0 +1,86 @@
+.header {
+  background: var(--blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.right {
+  height: 9vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+  color: var(--white);
+}
+.navbar a {
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.navbar p:hover {
+  cursor: pointer;
+}
+
+.github a {
+  color: var(--white);
+}
+
+.hamburger {
+  flex-direction: column;
+  display: none;
+}
+.line {
+  height: 4px;
+  width: 40px;
+  background: var(--white);
+  margin: 0.2rem;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  background: var(--white);
+}
+
+.hamburger-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.hamburger-menu-list li {
+  width: 100%;
+  height: 12vh;
+  text-align: center;
+}
+.hamburger-menu-list li a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .github {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

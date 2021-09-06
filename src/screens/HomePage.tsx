@@ -6,6 +6,9 @@ const HomePage = () => {
   return (
     <Layout>
       <section className="home">
+        <div className="hero">
+          <p>Know if it's your day.</p>
+        </div>
         <ul className="games">
           <li className="game">
             <h3>Floating Bubbles</h3>

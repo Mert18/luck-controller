@@ -1,0 +1,53 @@
+.hero {
+  height: 30vh;
+  display: flex;
+  padding: 3rem;
+  font-size: 1.6rem;
+  color: var(--blue);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  margin: 3rem;
+}
+.game {
+  height: 35vh;
+  width: 30%;
+  border: 1px solid var(--blue);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--blue);
+}
+.game a {
+  color: var(--white);
+  background: var(--blue);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.game a:hover {
+  background: var(--blue-flavor);
+}
+
+@media (max-width: 1000px) {
+  .game {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  .games {
+    margin: 0.5rem;
+  }
+  .game {
+    width: 85%;
+  }
+}
