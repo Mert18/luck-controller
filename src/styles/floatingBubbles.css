@@ -1,0 +1,72 @@
+.floating-bubbles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gamescreen {
+  border: 1px solid var(--blue);
+  width: 70%;
+  height: 70%;
+}
+
+.floating {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding: 2rem;
+}
+.floating h2,
+p,
+button {
+  z-index: 999;
+}
+
+.bubbles {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.bubble {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: var(--blue);
+  border-radius: 50%;
+  transition: all 1s ease;
+  border: 4px solid var(--blue-flavor);
+}
+
+.leftsec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+.leftsec:hover {
+  background: rgba(0, 0, 255, 0.185);
+  cursor: pointer;
+}
+
+.rightsec {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+.rightsec:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 255, 0.185);
+}
