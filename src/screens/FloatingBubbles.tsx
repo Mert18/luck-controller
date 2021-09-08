@@ -18,7 +18,7 @@ const FloatingBubbles = () => {
     setTop(Array.from({ length: 11 }, () => Math.floor(Math.random() * 80)));
     setTimeout(() => {
       if (left.filter((el) => el < 50).length > 5.5) {
-        setLeftBack("rgba(0, 128, 0, 0.424)");
+        setLeftBack("rgba(75, 250, 75, 0.63)");
       } else {
         setLeftBack("rgba(255, 0, 0, 0.246)");
       }
@@ -37,7 +37,7 @@ const FloatingBubbles = () => {
     setTop(Array.from({ length: 11 }, () => Math.floor(Math.random() * 80)));
     setTimeout(() => {
       if (left.filter((el) => el > 50).length > 5.5) {
-        setRightBack("rgba(0, 128, 0, 0.424)");
+        setRightBack("rgba(75, 250, 75, 0.63)");
       } else {
         setRightBack("rgba(255, 0, 0, 0.246)");
       }

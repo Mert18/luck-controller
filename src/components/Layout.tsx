@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import ListOfGames from "./ListOfGames";
 import "../styles/layout.css";
 
 const Layout: React.FC = ({ children }) => {
@@ -8,6 +9,7 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Header />
       {children}
+      <ListOfGames />
       <Footer />
     </>
   );

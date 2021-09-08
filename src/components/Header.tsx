@@ -16,19 +16,8 @@ const Header = () => {
       <div className="right">
         <ul className="navbar">
           <Link to="/">Home</Link>
-          <p>Games</p>
           <Link to="/contribution">Contributing</Link>
         </ul>
-
-        <div className="github">
-          <a
-            href="https://github.com/Mert18/luck-controller"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-        </div>
       </div>
 
       <div className="hamburger" onClick={handleHamburger}>
