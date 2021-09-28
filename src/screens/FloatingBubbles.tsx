@@ -20,6 +20,7 @@ const FloatingBubbles = () => {
     setMyArr(random.filter((el) => el > 50))
     setChosen("up")
   }
+
   useEffect(() => {
     if(myArr.length >= 6 && chosen === "down" || myArr.length >=6 && chosen === "up"){
       setHistory([...history, true])
@@ -34,7 +35,7 @@ const FloatingBubbles = () => {
         <div className="gamescreen">
           <div className="floating-head">
             <h2>Floating Bubbles ( 50% )</h2>
-            <p>Every box will change to a number between 0 - 100. Will they mostly be lower than 50 or higher?</p>
+            <p>Eleven boxes will change to a number between 0 - 100. Will they mostly be lower than 50 or higher?</p>
             <div className="floating-choose">
               <button className="floating-down" onClick={() => {
                   gameStartForDown();
@@ -49,11 +50,12 @@ const FloatingBubbles = () => {
             </div>
           </div>
           <div className="floating-game">
+            {/* }
             <div className="bubbles">
               {random.map((el, i) => (<div className="bubble" key={i}>
                 {el}
               </div>))}
-           </div>
+           </div>{ */ }
             <div className="floating-result">
               {myArr.map((el, i) => (<div className="bubble" key={i}>
                 {el}
